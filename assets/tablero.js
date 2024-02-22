@@ -3,7 +3,7 @@ let Tablero = document.getElementById("Tablero");
 
 let loading = false;
 
-fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-10-06&sortBy=publishedAt&apiKey=d57a251ca7e64105b0438ba839951d72', { method: "GET" })
+fetch('https://newsapi.org/v2/everything?q=apple&from=2024-02-21&to=2024-02-21&sortBy=popularity&apiKey=d57a251ca7e64105b0438ba839951d72', { method: "GET" })
   .then(response => response.json())
   .then(data => {
     renderizado(data);
